@@ -17,7 +17,7 @@
 		"@tailwindcss/typography": "^0.5.20",
 		"framer-motion": "^12.42.2",
 		"marked": "^18.0.7",
-		"next": "^16.2.11",
+		"next": "^16.2.12",
 		"react": "^19.2.8",
 		"react-dom": "^19.2.8",
 		"react-icons": "^5.7.0",
