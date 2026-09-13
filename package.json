@@ -5,7 +5,7 @@
 	"description": "100% vibe-coded mobile app landing page template — built with Next.js, React, and Tailwind CSS. Drop in your app's content, deploy, done.",
 	"author": "Bohdan <https://bohd4n.dev>",
 	"license": "MIT",
-	"packageManager": "pnpm@11.8.0+sha512.c1f5e7c4cb241c8f174b743851d82f42b802324afc8b0f116b96adb15aa06664948dde36960a3ba1079ba5b4b29dd0140135b94b5b5f5263592249d68e555f26",
+	"packageManager": "pnpm@12.4.1+sha512.2e81e399d73fe8390dab25e06aa788ab7a5908248d2f5a370f82b481147a6a7a367bf8048f9a6fdb6460f21a66f0542dedb8b94ca2c8723596741920b1656d4c",
 	"homepage": "https://landing.bohd4n.dev",
 	"scripts": {
 		"dev": "next dev",
@@ -15,21 +15,21 @@
 	},
 	"dependencies": {
 		"@tailwindcss/typography": "^0.5.20",
-		"framer-motion": "^12.43.0",
-		"marked": "^18.0.7",
-		"next": "^16.3.0",
-		"react": "^19.2.8",
-		"react-dom": "^19.2.8",
+		"framer-motion": "^13.2.0",
+		"marked": "^18.0.12",
+		"next": "^16.3.5",
+		"react": "^19.3.0",
+		"react-dom": "^19.3.0",
 		"react-icons": "^5.7.0",
 		"tailwindcss": "^4.3.3"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.5.7",
+		"@biomejs/biome": "2.5.13",
 		"@tailwindcss/postcss": "^4.3.3",
-		"@types/node": "^26.1.2",
-		"@types/react": "^19.2.18",
-		"@types/react-dom": "^19.2.4",
-		"postcss": "^8.5.25",
+		"@types/node": "^26.5.1",
+		"@types/react": "^19.3.0",
+		"@types/react-dom": "^19.3.0",
+		"postcss": "^8.5.28",
 		"typescript": "7.0.2"
 	}
 }
