@@ -6,14 +6,17 @@ const slugify = (text: string) =>
 		.replace(/[^a-z0-9]+/g, "-")
 		.replace(/(^-|-$)/g, "");
 
-const renderer = new marked.Renderer();
-renderer.heading = ({ text, depth }: { text: string; depth: number }) => {
-	const plainText = text.replace(/<[^>]*>/g, "");
-	const id = slugify(plainText);
-	return `<h${depth} id="${id}">${text}</h${depth}>`;
-};
-
-marked.setOptions({ gfm: true, breaks: false, renderer });
+marked.use({
+	gfm: true,
+	breaks: false,
+	renderer: {
+		heading({ text, depth }: { text: string; depth: number }) {
+			const plainText = text.replace(/<[^>]*>/g, "");
+			const id = slugify(plainText);
+			return `<h${depth} id="${id}">${text}</h${depth}>`;
+		},
+	},
+});
 
 export const parseMarkdown = (content: string) => marked.parse(content);
 export { slugify };

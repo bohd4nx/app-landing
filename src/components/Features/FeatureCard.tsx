@@ -8,7 +8,6 @@ const FeatureCard = ({ feature, index }: FeatureCardProps) => {
 	const Icon = getIcon(feature.icon);
 	return (
 		<motion.div
-			key={feature.title}
 			initial={{ opacity: 0, y: 24 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			viewport={{ once: true }}

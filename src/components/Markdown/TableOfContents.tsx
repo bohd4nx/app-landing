@@ -55,7 +55,7 @@ const TableOfContents = ({ content }: { content: string }) => {
 	if (!headings.length) return null;
 
 	return (
-		<nav className="sticky top-24 hidden xl:block">
+		<nav className="sticky top-24">
 			<p className="mb-4 text-xs font-bold uppercase tracking-widest text-gray-500 dark:text-white/30">
 				On This Page
 			</p>

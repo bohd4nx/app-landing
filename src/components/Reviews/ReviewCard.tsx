@@ -6,7 +6,6 @@ import type { ReviewCardProps } from "@/types";
 
 const ReviewCard = ({ review, index }: ReviewCardProps) => (
 	<motion.div
-		key={review.author}
 		initial={{ opacity: 0, y: 24 }}
 		whileInView={{ opacity: 1, y: 0 }}
 		viewport={{ once: true }}

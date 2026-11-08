@@ -13,7 +13,8 @@ const SocialLinks = ({ items }: SocialLinksProps) => (
 				<motion.a
 					key={item.label}
 					initial={{ opacity: 0, scale: 0.8 }}
-					animate={{ opacity: 1, scale: 1 }}
+					whileInView={{ opacity: 1, scale: 1 }}
+					viewport={{ once: true }}
 					transition={{ duration: 0.3, delay: index * 0.1 }}
 					whileHover={{ scale: 1.1, rotate: 5 }}
 					whileTap={{ scale: 0.95 }}
